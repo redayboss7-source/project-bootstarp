@@ -9,6 +9,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- font awesoem cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -21,25 +26,37 @@
       padding: 14px 80px 18px 36px;
       cursor: pointer;
     }
-    /* Menu */
-.menu{
-    background:rgb(41, 37, 37);
-}
-.menu a{
-    color:rgb(255, 255, 255);
-    text-decoration:none;
-    padding:15px 20px;
-    display:inline-block;
-    font-size:14px;
-}
-.menu a:hover{
-    color:rgb(204, 223, 223);
-}
 
-/* eta card er design  */
+    /* Menu */
+    .menu {
+      background: rgb(41, 37, 37);
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .dropdown-item {
+      color: #111;
+    }
+
+    .menu a:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    /* eta card er design  */
     .card:hover {
       transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    }
+
+    .search-input {
+      width: 150px;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -55,61 +72,64 @@
       </div>
       <div class="col-3">
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button> <span><i
+              class="fa-solid fa-cart-shopping fs-3 text-primary px-2 mx-2 my-2"></i></span>
+          <span><i class="fa-regular fa-user fs-3 text-dark px-2 mx-2 my-2"></i></span>
         </form>
-      </div>
-    </div>
-  </div>
- <div class="menu text-center">
-<a href="#">EID COLLECTION '26</a>
-<a href="#">EID CASUALS</a>
-<a href="#">KIDS EID</a>
-
-<div class="dropdown position-static d-inline-block">
-  <a class="nav-link dropdown-toggle text-Light" href="#" data-bs-toggle="dropdown">
-    MEN
-  </a>
-
-  <div class="dropdown-menu w-100 mt-0 border-0 shadow">
-    <div class="container">
-      <div class="row py-4">
-
-        <div class="col-md-4">
-          <h6 class=" text-dark">TOPS</h6>
-          <a class="dropdown-item" href="#">Jersey</a>
-          <a class="dropdown-item" href="#">Casual Shirt - Long Sleeve</a>
-          <a class="dropdown-item" href="#">Formal Shirt</a>
-          <a class="dropdown-item" href="#">Panjabi</a>
-          <a class="dropdown-item" href="#">Polo Shirt</a>
-          <a class="dropdown-item" href="#">T-Shirt</a>
-        </div>
-
-        <div class="col-md-4">
-          <h6 class="fw-bold">BOTTOMS</h6>
-          <a class="dropdown-item" href="#">Five Pocket Pant</a>
-          <a class="dropdown-item" href="#">Chino Long Pant</a>
-          <a class="dropdown-item" href="#">Denim Pant</a>
-          <a class="dropdown-item" href="#">Joggers</a>
-          <a class="dropdown-item" href="#">Shorts</a>
-        </div>
-
-        <div class="col-md-4">
-          <h6 class="fw-bold">WINTER</h6>
-          <a class="dropdown-item" href="#">Sweater T-Shirt</a>
-          <a class="dropdown-item" href="#">All</a>
-        </div>
 
       </div>
     </div>
   </div>
-</div>
+  <div class="menu text-center ">
+    <a href="pro.html">EID COLLECTION '26</a>
+    <a href="#">EID CASUALS</a>
+    <a href="#">KIDS EID</a>
 
-<a href="#">WOMEN</a>
-<a href="#">KIDS</a>
-<a href="#">ACCESSORIES</a>
-<a href="#">RISE WITH PAWS</a>
-</div>
+    <div class="dropdown position-static d-inline-block">
+      <a class="nav-link dropdown-toggle text-Light" href="#" data-bs-toggle="dropdown">
+        MEN
+      </a>
+
+      <div class="dropdown-menu w-100 mt-0 border-0 shadow">
+        <div class="container">
+          <div class="row py-4">
+
+            <div class="col-md-4">
+              <h6 class=" text-dark">TOPS</h6>
+              <a class="dropdown-item text-dark" href="#">Jersey</a>
+              <a class="dropdown-item text-dark" href="#">Casual Shirt - Long Sleeve</a>
+              <a class="dropdown-item text-dark" href="#">Formal Shirt</a>
+              <a class="dropdown-item text-dark" href="#">Panjabi</a>
+              <a class="dropdown-item text-dark" href="#">Polo Shirt</a>
+              <a class="dropdown-item text-dark" href="#">T-Shirt</a>
+            </div>
+
+            <div class="col-md-4">
+              <h6 class="fw-bold">BOTTOMS</h6>
+              <a class="dropdown-item text-dark" href="#">Five Pocket Pant</a>
+              <a class="dropdown-item text-dark" href="#">Chino Long Pant</a>
+              <a class="dropdown-item text-dark" href="#">Denim Pant</a>
+              <a class="dropdown-item text-dark" href="#">Joggers</a>
+              <a class="dropdown-item text-dark" href="#">Shorts</a>
+            </div>
+
+            <div class="col-md-4">
+              <h6 class="fw-bold">WINTER</h6>
+              <a class="dropdown-item text-dark" href="#">Sweater T-Shirt</a>
+              <a class="dropdown-item text-dark" href="#">All</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#">WOMEN</a>
+    <a href="#">KIDS</a>
+    <a href="#">ACCESSORIES</a>
+    <a href="#">RISE WITH PAWS</a>
+  </div>
   <div class="container-fluid">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -135,202 +155,219 @@
       </button>
     </div>
   </div>
+  <marquee class="bg-dark fw-bold text-white py-3" behavior="" direction="">
+    Shop 8000+ BDT & Get Exclusive LOYALTY CLUB CARD
+
+  </marquee>
 
 
 
-<title>Top Categories</title>
+  <title>Top Categories</title>
 
 
 
-<style>
-.category-card {
-    position: relative;
-    overflow: hidden;
-}
+  <style>
+    .category-card {
+      position: relative;
+      overflow: hidden;
+      /* prevents image overflow when scaling */
+    }
 
-.category-card img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
+    .category-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.9s ease-in-out;
+    }
 
-.category-title {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-}
-</style>
+    .category-card:hover img {
+      transform: scale(1.30);
+      /* zoom effect */
+    }
 
-</head>
-<body>
+    .category-title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
 
-<section class="py-5">
-<div class="container">
+  </head>
 
-<h2 class="text-center mb-5 fw-bold">TOP CATEGORIES</h2>
+  <body>
 
-<div class="row g-4">
+    <section class="py-5 px-2">
+      <div class="">
 
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
-        <div class="category-title">ETHNIC TOP</div>
-    </div>
-</div>
+        <h2 class="text-center mb-5 fw-bold">TOP CATEGORIES</h2>
 
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070" alt="">
-        <div class="category-title">PANJABI</div>
-    </div>
-</div>
+        <div class="row g-4">
 
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb" alt="">
-        <div class="category-title">CASUAL SHIRT</div>
-    </div>
-</div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_ETHNIC_TOP_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
 
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
-        <div class="category-title">CASUAL TOP</div>
-    </div>
-</div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_PREMIUM_PANJABI_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
 
-</div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_CASUAL_SHIRT_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
 
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_CASUAL_TOP_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
 
-</div>
-</section>
-<section class="py-5">
-<div class="container">
-
-
-
-<div class="row g-4">
-
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
-        <div class="category-title">ETHNIC TOP</div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070" alt="">
-        <div class="category-title">PANJABI</div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb" alt="">
-        <div class="category-title">CASUAL SHIRT</div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
-        <div class="category-title">CASUAL TOP</div>
-    </div>
-</div>
-
-</div>
+        </div>
 
 
-</div>
-</section>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="px-2">
 
 
-</body>
+
+        <div class="row g-4">
+
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_JOGGER_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_DENIM_PANT_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_JUMPSUIT_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="category-card">
+              <img src="RISE_KID_1066x.webp" alt="">
+              <div class="category-title"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+    <section>
+      <img src="RISE_AUTHENTIC.webp" alt="" class="img-fluid">
+    </section>
+
+
+  </body>
+
 </html>
 
+</div>
+</section>
+
+<footer class="text-center py-4 mt-5" style="background:#111;color:white;">
+  <!-- Premium Footer -->
+  <footer style="background:#111; color:white; padding:60px 0 20px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo + About -->
+        <div class="col-md-4 mb-4">
+          <h1 style="font-weight:bold; letter-spacing:4px;">RISE</h1>
+          <p style="color:#ccc; font-size:14px;">
+            RISE is a fashion forward retailer that blends local culture
+            with global trends creating a unique spin on fashion.
+            Pioneering Streetwear into the Bangladesh market,
+            RISE offers a wide array of clothing and accessories.
+          </p>
+
+          <h6 class="mt-4">CONNECT WITH US</h6>
+          <div>
+            <span style="margin-right:15px;">🌐</span>
+            <span style="margin-right:15px;">📘</span>
+            <span style="margin-right:15px;">📷</span>
+            <span>▶</span>
+          </div>
+        </div>
+
+        <!-- Help -->
+        <div class="col-md-3 mb-4">
+          <h5>NEED HELP?</h5>
+          <p style="color:#ccc; font-size:14px;">
+            (10 AM – 6 PM)<br>
+            (Except Weekend/Govt. Holidays)
+          </p>
+          <p style="color:#ccc; font-size:14px;">
+            📞 +8801708156699<br>
+            ✉ online@rise-brand.com
+          </p>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-3 mb-4">
+          <h5>INFORMATION</h5>
+          <ul style="list-style:none; padding:0; color:#ccc; font-size:14px;">
+            <li>About RISE</li>
+            <li>Store Locator</li>
+            <li>Loyalty Club Card</li>
+            <li>Social Responsibility</li>
+          </ul>
+        </div>
+
+        <!-- Policy -->
+        <div class="col-md-2 mb-4">
+          <h5>POLICY</h5>
+          <ul style="list-style:none; padding:0; color:#ccc; font-size:14px;">
+            <li>Privacy Policy</li>
+            <li>Return And Exchange Policy</li>
+            <li>Terms And Conditions</li>
+            <li>Safety Advisory</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr style="border-color:#333;">
+
+      <div class="text-center" style="color:#aaa; font-size:14px;">
+        © 2026 RISE Brand. All Rights Reserved.
+      </div>
+
     </div>
-  </section>
-   
-  <footer class="text-center py-4 mt-5" style="background:#111;color:white;">
-    <!-- Premium Footer -->
-<footer style="background:#111; color:white; padding:60px 0 20px;">
-<div class="container">
-<div class="row">
-
-<!-- Logo + About -->
-<div class="col-md-4 mb-4">
-<h1 style="font-weight:bold; letter-spacing:4px;">RISE</h1>
-<p style="color:#ccc; font-size:14px;">
-RISE is a fashion forward retailer that blends local culture
-with global trends creating a unique spin on fashion.
-Pioneering Streetwear into the Bangladesh market,
-RISE offers a wide array of clothing and accessories.
-</p>
-
-<h6 class="mt-4">CONNECT WITH US</h6>
-<div>
-<span style="margin-right:15px;">🌐</span>
-<span style="margin-right:15px;">📘</span>
-<span style="margin-right:15px;">📷</span>
-<span>▶</span>
-</div>
-</div>
-
-<!-- Help -->
-<div class="col-md-3 mb-4">
-<h5>NEED HELP?</h5>
-<p style="color:#ccc; font-size:14px;">
-(10 AM – 6 PM)<br>
-(Except Weekend/Govt. Holidays)
-</p>
-<p style="color:#ccc; font-size:14px;">
-📞 +8801708156699<br>
-✉ online@rise-brand.com
-</p>
-</div>
-
-<!-- Information -->
-<div class="col-md-3 mb-4">
-<h5>INFORMATION</h5>
-<ul style="list-style:none; padding:0; color:#ccc; font-size:14px;">
-<li>About RISE</li>
-<li>Store Locator</li>
-<li>Loyalty Club Card</li>
-<li>Social Responsibility</li>
-</ul>
-</div>
-
-<!-- Policy -->
-<div class="col-md-2 mb-4">
-<h5>POLICY</h5>
-<ul style="list-style:none; padding:0; color:#ccc; font-size:14px;">
-<li>Privacy Policy</li>
-<li>Return And Exchange Policy</li>
-<li>Terms And Conditions</li>
-<li>Safety Advisory</li>
-</ul>
-</div>
-
-</div>
-
-<hr style="border-color:#333;">
-
-<div class="text-center" style="color:#aaa; font-size:14px;">
-© 2026 RISE Brand. All Rights Reserved.
-</div>
-
-</div>
-</footer>
+  </footer>
 
 
 </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
